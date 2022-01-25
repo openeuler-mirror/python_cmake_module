@@ -1,23 +1,27 @@
 # python_cmake_module
 
 #### 介绍
-Provide CMake module with extra functionality for Python.
+
+python_cmake_module节点
+
 
 #### 软件架构
 软件架构说明
 
-
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 下载rpm包
+
+wget http://121.36.3.168:82/home:/davidhan:/branches:/openEuler:/21.03/standard_aarch64/aarch64/python_cmake_module-0.8.1-1.oe1.aarch64.rpm
+
+2. 安装rpm包
+
+sudo rpm -ivh python_cmake_module-0.8.1-1.oe1.aarch64.rpm
+
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+安装完成以后，在/opt/ros/foxy/目录下有python_cmake_module/文件夹证明安装成功
 
 #### 参与贡献
 
