@@ -4,9 +4,12 @@
 
 python_cmake_module节点
 
+为CMake模块提供Python的额外功能。
 
 #### 软件架构
 软件架构说明
+
+https://github.com/ros2/python_cmake_module.git
 
 #### 安装教程
 
