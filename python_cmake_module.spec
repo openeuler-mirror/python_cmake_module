@@ -12,6 +12,7 @@ BuildRequires:	python3-setuptools
 BuildRequires:	python3-pytest
 BuildRequires:	asio-devel
 BuildRequires:	tinyxml2-devel
+BuildRequires:	git
 
 %description
 This is ROS2 foxy python_cmake_module Package.
