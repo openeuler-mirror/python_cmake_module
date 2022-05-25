@@ -1,10 +1,12 @@
 Name:		python_cmake_module
 Version:	0.8.1
-Release:	1
+Release:	2
 Summary:	This is ROS2 foxy python_cmake_module Package
 License:	Public Domain and Apache-2.0 and BSD and MIT and BSL-1.0 and LGPL-2.1-only and MPL-2.0 and GPL-3.0-only and GPL-2.0-or-later and MPL-1.1 and IJG and Zlib and OFL-1.1
 URL:		https://github.com/ros2/python_cmake_module.git
 Source0:	https://github.com/ros2/python_cmake_module/archive/refs/tags/0.8.1.tar.gz
+Source1:	osrf_testing_tools_cpp-1.5.1.tar.gz
+
 BuildRequires:	gcc-c++
 BuildRequires:	cmake
 BuildRequires:	python3-devel
@@ -151,6 +153,8 @@ cd ..
 
 # for workspace
 cd workspace
+rm -rf src/osrf/osrf_testing_tools_cpp/*
+tar -zxvf %{SOURCE1} --strip-components 1 -C src/osrf/osrf_testing_tools_cpp
 colcon build --merge-install
 
 ####
@@ -177,6 +181,9 @@ cp -r install/* %{buildroot}/opt/ros/foxy/
 /opt/ros/foxy/*
 
 %changelog
+* Tue May 31 2022 lvxiaoqian <xiaoqian@nj.iscas.ac.cn> - 0.8.1-2
+- update osrf_testing_tools_cpp to support riscv
+
 * Thu 11-30-2021 openEuler Buildteam <hanhaomin008@126.com>
 - Package init
 * Thu 01-05-2022 openEuler Buildteam <ximonaxi@126.com>
